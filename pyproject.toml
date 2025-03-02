@@ -20,15 +20,30 @@ exclude = [
 
 [tool.ruff.lint]
 select = [
-  "ANN", # Annotations
   "A",   # flake8-builtins
+  "ANN", # Annotations
+  "ARG", # flake8-unused-arguments
   "B",   # flake8-bugbear
   "D",   # pydocstyle
+  "DTZ", # flake8-datetimez
   "E",   # Error
+  "ERA", # eradicate
   "F",   # Pyflakes
+  "FIX", # flake8-fixme
+  "FLY", # flynt
+  "FURB",  # refurb
+  "ICN", # flake8-import-conventions
+  "ISC", # flake8-implicit-str-concat
   "N",   # pep8-naming
+  "PIE",  # flake8-pie
+  "PLE",  # Pylint Errors
+  "PLW",  # Pylint Warnings
   "Q",   # flake8-quotes
+  "RET", # flake8-return
   "RUF", # Ruff-specific rules
+  "SIM", # flake8-simplify
+  "T",   # flake8-print
+  "TC",  # type-checking
   "UP",  # pyupgrade
   "W",   # Warning
 ]
@@ -43,13 +58,28 @@ ignore = [
   "D401",  # First line should be in imperative mood
   "D413",  # Missing blank line after last section
 
+  # Annotations
+  "ANN003",  # Missing type annotation for **kwargs
+  "ANN204",  # Missing for __init__ method
+
+  # Type-checking
+  "TC001", "TC002", "TC003", "TC004",  # Moving imports
+
   # Docstring: Missing docs
   "D101",  # class
+  "D102",  # [ REMOVE LATER ] public method
   "D105",  # magic method docstring required (__str__, __int__, etc)
   "D107",  # __init__ docstring required
 
   # Except cases
   "B904",  # raise in except
+
+  # Simplify
+  "SIM105", # Use contextlib.suppress
+  "SIM114", # Merge if-else to one-liner
+
+  # Pylint Warnings
+  "PLW2901",  # Overwrite loop control variable
 
   # Type hints
   "UP037",  # type hints with quotes
