@@ -20,32 +20,32 @@ exclude = [
 
 [tool.ruff.lint]
 select = [
-  "A",   # flake8-builtins
-  "ANN", # Annotations
-  "ARG", # flake8-unused-arguments
-  "B",   # flake8-bugbear
-  "D",   # pydocstyle
-  "DTZ", # flake8-datetimez
-  "E",   # Error
-  "ERA", # eradicate
-  "F",   # Pyflakes
-  "FIX", # flake8-fixme
-  "FLY", # flynt
+  "A",     # flake8-builtins
+  "ANN",   # Annotations
+  "ARG",   # flake8-unused-arguments
+  "B",     # flake8-bugbear
+  "D",     # pydocstyle
+  "DTZ",   # flake8-datetimez
+  "E",     # Error
+  "ERA",   # eradicate
+  "F",     # Pyflakes
+  "FIX",   # flake8-fixme
+  "FLY",   # flynt
   "FURB",  # refurb
-  "ICN", # flake8-import-conventions
-  "ISC", # flake8-implicit-str-concat
-  "N",   # pep8-naming
-  "PIE",  # flake8-pie
-  "PLE",  # Pylint Errors
-  "PLW",  # Pylint Warnings
-  "Q",   # flake8-quotes
-  "RET", # flake8-return
-  "RUF", # Ruff-specific rules
-  "SIM", # flake8-simplify
-  "T",   # flake8-print
-  "TC",  # type-checking
-  "UP",  # pyupgrade
-  "W",   # Warning
+  "ICN",   # flake8-import-conventions
+  "ISC",   # flake8-implicit-str-concat
+  "N",     # pep8-naming
+  "PIE",   # flake8-pie
+  "PLE",   # Pylint Errors
+  "PLW",   # Pylint Warnings
+  "Q",     # flake8-quotes
+  "RET",   # flake8-return
+  "RUF",   # Ruff-specific rules
+  "SIM",   # flake8-simplify
+  "T",     # flake8-print
+  "TC",    # type-checking
+  "UP",    # pyupgrade
+  "W",     # Warning
 ]
 
 ignore = [
@@ -67,7 +67,6 @@ ignore = [
 
   # Docstring: Missing docs
   "D101",  # class
-  "D102",  # [ REMOVE LATER ] public method
   "D105",  # magic method docstring required (__str__, __int__, etc)
   "D107",  # __init__ docstring required
 
@@ -75,8 +74,8 @@ ignore = [
   "B904",  # raise in except
 
   # Simplify
-  "SIM105", # Use contextlib.suppress
-  "SIM114", # Merge if-else to one-liner
+  "SIM105",  # Use contextlib.suppress
+  "SIM114",  # Merge if-else to one-liner
 
   # Pylint Warnings
   "PLW2901",  # Overwrite loop control variable
