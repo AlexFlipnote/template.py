@@ -1,4 +1,5 @@
 [tool.ruff]
+target-version = "py311"
 indent-width = 4
 line-length = 256  # Debating to change this.. not sure yet
 output-format = "concise"
@@ -48,6 +49,9 @@ select = [
   "W",     # Warning
 ]
 
+extend-select = ["W", "E"]
+preview = true
+
 ignore = [
   # Docstring: function
   "D100",  # docstring in public module
@@ -76,6 +80,10 @@ ignore = [
   # Simplify
   "SIM105",  # Use contextlib.suppress
   "SIM114",  # Merge if-else to one-liner
+
+  # Refurb
+  "FURB101",  # read-whole-file
+  "FURB103",  # write-whole-file
 
   # Pylint Warnings
   "PLW2901",  # Overwrite loop control variable
