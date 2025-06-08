@@ -6,10 +6,10 @@ clean:  ## Clean the project
 	rm uv.lock
 
 type:  ## Run pyright type checker
-	@pyright --pythonversion 3.11
+	@uv run pyright --pythonversion 3.13
 
 lint:  ## Run ruff linter
-	@ruff check --config pyproject.toml
+	@uv run ruff check --config pyproject.toml
 
 install:  ## Install dependencies for production
 	@uv sync --no-dev
