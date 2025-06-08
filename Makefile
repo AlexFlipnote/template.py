@@ -6,3 +6,9 @@ type:  ## Run pyright type checker
 
 lint:  ## Run ruff linter
 	@ruff check --config pyproject.toml
+
+install:  ## Install dependencies for production
+	@uv sync --no-dev
+
+install_dev:  ## Install dev dependencies
+	@uv sync
