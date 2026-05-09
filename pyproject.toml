@@ -1,13 +1,20 @@
+# if it is not a library, remove the build-system
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "template.py"
-version = "0.0.1"
 description = "A template for Python projects"
-readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
-authors = [
-  { name = "AlexFlipnote", email = "root@alexflipnote.dev" },
-]
+license = "MIT"
+license-files = ["LICENSE"]
+
+version = "0.0.1"
+readme = "README.md"
+keywords = ["template", "python", "project"]
+authors = [{name = "AlexFlipnote", email = "root@alexflipnote.dev"}]
+
 dependencies = []
 
 [dependency-groups]
