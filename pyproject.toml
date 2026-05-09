@@ -19,13 +19,14 @@ dev = [
 [tool.ruff]
 target-version = "py311"
 indent-width = 4
-line-length = 256  # Debating to change this.. not sure yet
+line-length = 128
 output-format = "concise"
 
 # Files to include/exclude
 include = [
   "index.py",  # Usually my main file name scheme
   "main.py",
+  "src/**/*.py",
 ]
 exclude = [
   "**/__pycache__",
@@ -69,7 +70,6 @@ select = [
   "W",     # Warning
 ]
 
-extend-select = ["W", "E"]
 preview = true
 
 ignore = [
@@ -132,9 +132,6 @@ indent-style = "space"
 line-ending = "auto"
 
 [tool.pyright]
-reportOptionalOperand = "none"
-reportOptionalSubscript = "none"
-reportOptionalMemberAccess = "none"
 reportUnnecessaryTypeIgnoreComment = "warning"
 typeCheckingMode = "basic"
 pythonVersion = "3.11"
@@ -142,6 +139,7 @@ pythonVersion = "3.11"
 include = [
   "index.py",  # Usually my main file name scheme
   "main.py",
+  "src",
 ]
 
 exclude = [

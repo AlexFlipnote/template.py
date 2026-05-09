@@ -4,10 +4,13 @@ target:
 
 ##@ Code quality
 type:  ## Run pyright type checker
-	@uv run pyright --pythonversion 3.13
+	@uv run pyright --pythonversion 3.11
 
 lint:  ## Run ruff linter
 	@uv run ruff check --config pyproject.toml
+
+format:  ## Run ruff formatter
+	@uv run ruff format --config pyproject.toml
 
 ##@ Development
 install:  ## Install dependencies for production
