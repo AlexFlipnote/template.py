@@ -124,6 +124,9 @@ ignore = [
 
   # Variable shadowing
   "A005",  # Files
+
+  # Import conventions
+  "ICN001",  # Unconventional import alias (e.g. datetime as dt)
 ]
 
 [tool.ruff.lint.isort]
